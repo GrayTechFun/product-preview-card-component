@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #f2eae2;
+}
+
+article {
+  width: 34.3em;
+  border-radius: 2em;
+}
+
+section.left {
+  width: 34.3em;
+  height: 24em;
+  background-image: url(../images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.8em 0.8em 0 0;
+}
+
+section.right {
+  background-color: white;
+  padding: 2.4em;
+  border-radius: 0 0 0.8em 0.8em;
+}
+
+header {
+  font-size: 1.2rem;
+  color: #6c7289;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin-bottom: 0.6em;
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+}
+
+main {
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  color: #6c7289;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1.9em;
+  margin: 2.4em 0 1em;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  color: #3d8168;
+}
+
+span {
+  font-size: 1.3rem;
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+button.cta {
+  background-color: #3d8168;
+  display: flex;
+  gap: 1em;
+  padding: 1em 6.8em;
+  border-radius: 0.8em;
+  border-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: white;
+  font-size: 1.4rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #1a4032;
+}
+
+@media only screen and (min-width: 1200px) {
+  article {
+    display: flex;
+    justify-content: center;
+  }
+
+  section.left {
+    width: 30em;
+    height: 45em;
+    border-radius: 0.8em 0 0 0.8em;
+    background-image: url(../images/image-product-desktop.jpg);
+  }
+
+  section.right {
+    width: 30em;
+    height: 45em;
+
+    border-radius: 0 0.8em 0.8em 0;
+  }
+
+  button.cta {
+    width: 18em;
+    padding: 1em 3em;
+    margin-top: 3em;
+    justify-content: center;
+  }
+}
